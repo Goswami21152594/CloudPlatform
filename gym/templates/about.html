@@ -12,9 +12,42 @@
         <div class="col-sm-8 text-center mt-5">
             <b> Objective of Gym Management<br>
                 The objective of the Gym Management System is to provide a system which handles the information of the people coming into the gym and maintaining their health care. It takes care of all their health information. It also maintains the people's attendance, gym records.</b>
+        
+            
+            
+<div1>
+<form>
+    Income Tax Calculator <br>
+    Income : <input type="text" id="income" /><br>
+    <input type="button" onClick="multiplyBy()" Value="Calculate Tax" />
+    </form>
+    <p>Income Tax : <br>
+    <span id = "result"></span>
+    </p>
+</div1>
+            
+            
+            
         </div>
     </div>
 </div>
+ <style>
+        div1 {
+          background-color: lightgrey;
+          width: 300px;
+          border: 15px solid green;
+          padding: 50px;
+          margin: 20px;
+        }
+        </style>
+<script>function multiplyBy()
+    {
+            num1 = document.getElementById("income").value;
+            num2 = 0.30;
+            document.getElementById("result").innerHTML = num1*num2;
+    }
+    
+    </script>
 {% endblock%}
 {% block css %}
 .footer {
@@ -34,14 +67,7 @@ text-align: center;
                 <p class="text-white">Copyright @2021 | Gym Management System | All Rights Reserved</p>
             </div>
             <div class="col-sm-6">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a  href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa fa-github"></i></a></li>
-                </ul>
+                
             </div>
         </div>
     </div>
